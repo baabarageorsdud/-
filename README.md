@@ -1,5 +1,32 @@
 
 
+# 基于微信小程序的学历学位认证系统
+
+> **区块链存证说明**：本仓库已实现**以太坊链上存证最小可用版（MVP）**，包含：
+> - Solidity 智能合约（`blockchain/contracts/Attestation.sol`）
+> - Hardhat 本地开发环境（一键启动本地链、部署、演示）
+> - Spring Boot + web3j 存证演示服务（`blockchain-demo/`）
+>
+> 区块链实现方案：本地以太坊（Hardhat）+ Solidity 0.8 合约 + Spring Boot（web3j 4.x）  
+> **链上只存关键字段的 SHA-256 hash，不存隐私明文**。  
+> 详细说明见 [`docs/blockchain-mvp.md`](docs/blockchain-mvp.md)  
+> 复试材料见 [`docs/复试材料-6页版.md`](docs/复试材料-6页版.md)
+
+---
+
+## 仓库结构
+
+```
+.
+├── blockchain/              # Hardhat 项目（Solidity 合约 + 部署/演示脚本）
+├── blockchain-demo/         # Spring Boot 区块链存证演示服务
+├── docs/
+│   ├── blockchain-mvp.md    # 区块链存证 MVP 开发文档
+│   └── 复试材料-6页版.md    # 复试材料（可导出为 Word）
+└── README.md
+```
+
+---
 
 毕业设计(论文)
 题  目：	基于微信小程序的学历学位认证系统

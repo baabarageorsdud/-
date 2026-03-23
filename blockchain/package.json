@@ -1,0 +1,16 @@
+{
+  "name": "degree-attestation-blockchain",
+  "version": "1.0.0",
+  "description": "学历学位认证系统 – 以太坊链上存证 Hardhat 项目",
+  "scripts": {
+    "chain": "npx hardhat node",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.js --network localhost",
+    "demo": "npx hardhat run scripts/demo.js --network localhost",
+    "test": "npx hardhat test"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.0"
+  }
+}
